@@ -1,0 +1,276 @@
+/* ------------------- General ------------------- */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #161616;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Calc */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+/* ------------------- Calc ------------------- */
+.calc-wrapper {
+	padding-top: 50px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.heading {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.heading-title {
+	margin-bottom: 15px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.48px;
+}
+
+.calc-section {
+	padding: 40px 50px;
+	background-color: #F4F8FA;
+}
+
+.calc-section:nth-child(odd) {
+	background-color: #FFFFFF;
+}
+
+.title__inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title__inline+.title__inline {
+	margin-left: 10px;
+}
+
+.input-short {
+	width: 20px;
+}
+
+.radio-wrapper {
+	display: flex;
+}
+
+.radio-wrapper .radio {
+	margin-top: 9px;
+}
+
+.radio-wrapper:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.radio-wrapper .radio {
+	margin-right: 15px;
+	margin-top: 6px;
+}
+
+.input-short {
+	width: 62px;
+	height: 36px;
+	border-radius: 4px;
+	border: 1px solid #9A9A9A;
+	font-size: 24px;
+	font-weight: 700;
+	color: #039BE5;
+	text-align: center;
+}
+
+.input-wrapper .input-short:first-child {
+	margin-right: 20px;
+}
+
+.input-wrapper .input-short:last-child {
+	margin-left: 20px;
+}
+
+/* ------------ TYPO ------------ */
+.title-bold {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.title-lite {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.note {
+	display: block;
+	font-style: italic;
+	padding-top: 10px;
+	font-size: 16px;
+	color: #969696;
+}
+
+/* ------------ FORMS ------------ */
+.checkbox-wrapper {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.checkbox-wrapper .checkbox {
+	margin-right: 15px;
+}
+
+/* ------------ PRICE ------------ */
+.calc-price {
+	margin-top: 20px;
+	padding: 40px 50px;
+	border: 10px solid #7AC5EA;
+}
+
+.calc-price-title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.calc-price-value {
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.range-input {
+	width: 100%;
+}
+
+.rooms-wrapper {
+	user-select: none;
+	display: flex;
+	align-items: center;
+}
+
+.rooms-radio-real {
+	opacity: 0;
+	appearance: none;
+	height: 0;
+	width: 0;
+	margin: 0;
+}
+
+.rooms-radio-fake {
+	display: inline-block;
+	width: 50px;
+	background-color: #E2E2E2;
+	text-align: center;
+	line-height: 50px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.rooms-radio-real:checked+.rooms-radio-fake {
+	background-color: #FBD422;
+}
+
+/* For mobile */
+@media (max-width: 576px) {
+	.checkbox-wrapper {
+		flex-wrap: wrap;
+		row-gap: 10px;
+	}
+
+	.calc-section {
+		padding: 20px 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.input-short {
+		width: 48px;
+		height: 30px;
+		font-size: 20px;
+	}
+
+	.title__inline+.title__inline {
+		margin-left: 3px;
+	}
+
+	.rooms-radio-fake {
+		width: 40px;
+		height: 45px;
+		line-height: 45px;
+	}
+}
+
+@media (max-width: 320px) {
+	.calc-wrapper {
+		padding-top: 30px;
+	}
+
+	.calc-counter {
+		max-width: 70%;
+	}
+
+	.heading {
+		margin: 0 5px 20px 5px
+	}
+
+	.heading-title {
+		font-size: 28px;
+	}
+
+	.heading-desc {
+		font-size: 14px;
+	}
+
+	.title-bold {
+		font-size: 21px;
+	}
+
+	.title__inline+.title__inline {
+		margin-top: 5px;
+	}
+
+	.title-lite {
+		font-size: 18px;
+	}
+
+	.note {
+		font-size: 14px;
+	}
+
+	.rooms-wrapper {
+		max-width: 215px;
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 5px
+	}
+
+	.calc-price {
+		padding: 20px 20px;
+	}
+
+	.calc-price-title {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+
+	.calc-price-value {
+		font-size: 19px;
+	}
+
+	.calc-section {
+		padding: 15px 10px;
+	}
+}
